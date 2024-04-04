@@ -29,8 +29,10 @@ export function displayImages(images) {
     galleryElement.insertAdjacentHTML('beforeend', imageCard);
   });
 
+  createSimpleLightbox(); // Після відображення зображень створюємо екземпляр SimpleLightbox
+
   hideLoader(); // Приховуємо індикатор завантаження після відображення зображень
-    // Плавне прокручування сторінки
+  // Плавне прокручування сторінки
   smoothScrollBy(galleryElement);
 }
 
